@@ -1,0 +1,25 @@
+body{  
+    background-color: royalblue;
+}
+#gridContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'left main main'
+    'left main main'; }
+#item1{ 
+    grid-area: header;
+    }
+#item2{ 
+    grid-area: left;
+}
+#item {
+    grid-area: main;
+}
+div div {
+    height: 100px;
+    width: 200px;
+    padding: 20px; 
+    margin: 20px;
+    background-color: white;
+}

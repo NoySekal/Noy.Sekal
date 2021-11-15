@@ -1,0 +1,34 @@
+body{  
+    background-color: royalblue;
+}
+#gridContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'left left left '
+    'main main main'; }
+#item1{ 
+    grid-area: header;
+    background-color: turquoise;
+    }
+#item2{ 
+    grid-area: left;
+}
+#item3{
+    grid-area: main;
+}
+div div {
+    height: 100px;
+    width: 200px;
+    padding: 20px; 
+    margin: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    #item1{ 
+        grid-area: header;
+        background-color: rgb(245, 60, 60);
+        }
+
+}
