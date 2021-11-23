@@ -21,3 +21,9 @@ color:blueviolet;
 a{
     color: brown;
 }
+a:visited{
+        
+}
+a:unvisited{ color: rgb(177, 27, 27);
+    
+}

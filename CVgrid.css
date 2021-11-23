@@ -1,15 +1,25 @@
 body{  
-    background-color: royalblue;
+    background-color: rgb(213, 182, 233);
 }
+/*rotate image css*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #gridContainer{
     display: grid;
     grid-template-areas: 
     'header header header'
-    'left left left '
+    'left left right '
     'main main main'; }
 #item1{ 
     grid-area: header;
-    background-color: turquoise;
+    background-color: rgb(85, 0, 134);
     }
 #item2{ 
     grid-area: left;
@@ -17,6 +27,17 @@ body{
 #item3{
     grid-area: main;
 }
+
+#rotate{
+    grid-area: right;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+
+    width: 150px;
+    height: 150px;
+}
+
 div div {
     height: 100px;
     width: 200px;
