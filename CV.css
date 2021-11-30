@@ -1,0 +1,55 @@
+body{  
+    background-color: rgb(213, 182, 233);
+}
+/*rotate image css*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'left left right '
+    'main main main'; }
+#item1{ 
+    grid-area: header;
+    background-color: rgb(85, 0, 134);
+    }
+#item2{ 
+    grid-area: left;
+}
+#item3{
+    grid-area: main;
+}
+
+#rotate{
+    grid-area: right;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+
+    width: 150px;
+    height: 150px;
+}
+
+div div {
+    height: 100px;
+    width: 200px;
+    padding: 20px; 
+    margin: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    #item1{ 
+        grid-area: header;
+        background-color: rgb(245, 60, 60);
+        }
+
+}
