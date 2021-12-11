@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hadar.css">
+    <title>גלריית תמונות</title>
+</head> <h1 class="title">גלריית תמונות</h1>  
+<body dir="rtl">
+    <div id="gridContainer">
+        <img id="Pic1" src="תספורת1.jpg" />
+        <img id="Pic2" src="תספורת2.jpg" />   
+        <img id="Pic3" src="תספורת3.jpg" />
+        <img id="Pic4" src="תספורת4.jpg" />
+        <img id="Pic5" src="תספורת5.jpg" />
+        <img id="Pic6" src="תספורת6.jpg" />
+       <img id="Pic7" src="תספורת7.jpg" />  
+      
+      <SCRIpt type="text/javascript">
+            let image = document.getElementById('תספורת1.JPG');
+            let images = ['תספורת1.jpg','תספורת6.jpg','תספורת7.jpg']
+            setInterval(function(){
+                let random = Math.floor(Math.random() * 4);
+                image.src = images [random]
+            },800);
+        </SCRIpt>
+    </div>
+</body>
